@@ -1,0 +1,302 @@
+/*------------------------------------------------------
+ESTILOS GENERALES
+------------------------------------------------------*/
+body {
+
+    overflow-x: hidden !important;  
+    overflow-y: scroll;                 
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: .95em;
+    font-weight: 400;
+    line-height: 23px;
+    color: #131e60;
+    background-color: #fdfce8;
+}
+
+aside{
+
+    font-size: .9em;
+
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 2em;
+    font-size: 1em;
+
+    }
+
+
+h1 span {
+	display: none;
+  color: #002e43;
+  font-size:0.95em;
+}
+
+h2, h3{
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing:10px;
+}
+
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 4em;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 6px;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: 300;
+
+}
+
+h4 {
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+
+.padding-section {
+    padding: 60px;
+    
+}
+
+
+/*------------------------------------------------------
+HERO
+------------------------------------------------------*/
+.hero{
+
+  background: url("../img/bg_gafa.jpg") no-repeat fixed center top / cover;
+  height: 100vh;
+  position: relative;
+
+  }   
+
+.hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238,.9);
+
+  }
+
+.barras {
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        top: 0px;
+        right: 20px;
+        font-size: 3em;
+        text-shadow: 0 0 7px #eee, 0 0 7px #eee, 0 0 7px #eee;
+  }
+
+ nav{
+  	width: 100%;
+  	height: 100px;
+    background: rgba(137, 143,177,.2);	
+    letter-spacing: 2px;
+    top: 0;
+    left:0;
+    transition: all .5s;
+    position: fixed;
+    z-index:400;
+
+  }
+
+ nav img {
+	height: 60px;
+    margin-left: 15px;
+    margin-top: 0px;
+    opacity: .8;
+
+}
+
+ nav ul {
+  	float: right;
+  	margin-right: 20px;
+}
+
+
+ nav li {
+  	display: inline-block;	
+    list-style: none;
+
+}
+
+
+nav a {
+	color:#131e60;
+    line-height: 60px;
+    padding: 10px 10px;
+    display: block;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration:none;
+}
+
+
+/*------------------------------------------------------
+INICIO
+------------------------------------------------------*/
+#inicio {
+
+	text-align:center;
+}
+
+.paddingExtra{
+
+	padding:120px;
+
+}
+
+#inicio span{
+    font-family: "Dosis", sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.7em;
+    font-weight:700;
+    color: #131e60;
+    text-shadow: 0 0 3px #fdfce8, 0 0 3px #fdfce8, 0 0 3px #fdfce8;
+  }
+
+
+#inicio ul{
+
+  list-style: none;
+}
+
+
+#video {
+	width: 600px;
+	margin-left: 50%;
+	margin-top: 200px;
+	transform: translate(-300px);
+}
+
+/*------------------------------------------------------
+CENTRO
+------------------------------------------------------*/
+
+#centro ul{
+
+  display: inline-block;
+  text-align: left;
+  line-height: 50px;
+  color: #131e60;
+  padding-bottom:50px;
+
+}
+
+#centro li{
+
+  list-style: none;
+  font-size: 17px;
+}
+
+.asimetrico {
+  color: #131e60;
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+
+}
+
+.asimetrico:before, .asimetrico:after {
+  background: inherit;
+  content: '';
+  height: 50%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+.asimetrico:before {
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: 100% 0;
+}
+ 
+.asimetrico:after {
+  bottom: 0;
+  transform: skewY(-3deg);
+  transform-origin: 100%;
+}
+
+/*------------------------------------------------------
+CONTACTO
+------------------------------------------------------*/
+#contacto{
+  background-color: #fff;
+
+}
+
+
+
+iframe{
+
+  float: left;
+  margin: 25px auto 15px auto;
+  display: block;
+  width: 100%;
+    
+  }
+
+#contacto article .devider {
+  width: 85%;
+  margin: 35px 5%;
+  border-bottom: 1px solid rgba(0,46,67,.2);
+}
+
+
+#contacto article ul{
+
+  display: inline-block;
+  list-style: none;
+}
+
+
+
+
+/*------------------------------------------------------
+FOOTER
+------------------------------------------------------*/
+footer a {
+  color: #fdfce8;
+}
+
+footer img{
+
+  width: 70px;
+  float: none;
+  margin: 20px auto;
+  display: block;
+}
+
+footer small p{
+
+  line-height: .5em;
+}
+
+footer{
+  background: #fff;
+}
+/*
+898fb1 azul pupila
+fdfce8 amarillo ojo
+131e60 azul letras
