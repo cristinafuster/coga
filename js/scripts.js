@@ -1,24 +1,51 @@
-$(document).ready(function() {
 
-				$('.botonModal').on('click', mostrarModal);
-
-				$('.cerrarModal').on('click', cerrarModal);
-
-			});
+$(window).on('scroll', efectosScroll);
 
 
-			function mostrarModal() {
+$(document).ready(function(){
 
-				let numeroModal = $(this).data('numero');
+	$('.barras').on('click', muestraMenu);
+	$('.botonModal').on('click', mostrarModal);
+	$('.cerrarModal').on('click', cerrarModal);
 
-				$('.contenidoModal[data-contenido=' + numeroModal + ']').show();
-
-				$('.fondoModal').fadeIn(300);
-
-			};
+});
 
 
-			function cerrarModal() {
+function muestraMenu(){
+	$('nav').toggleClass('abierto');
+	}
 
-				$('.fondoModal, .contenidoModal').fadeOut(500);
-			}
+
+function efectosScroll(){
+
+	let scrollActual = $(window).scrollTop();
+	let altoPantalla = $(window).innerHeight() / 2; 
+	let profundidadBoton  = $('#servicios .boton').offset().top;
+	let scrollObjetivo = profundidadBoton - altoPantalla;
+
+	if(scrollActual >= scrollObjetivo) {
+
+	$('#servicios .boton').addClass('visible');
+
+	}
+}
+
+function mostrarMenu() {
+
+	$('.menu').toggleClass('abierto');
+	}
+
+function mostrarModal() {
+
+	let numeroModal = $(this).data('numero');
+
+	$('.contenidoModal[data-contenido=' + numeroModal + ']').show();
+
+	$('.fondoModal').fadeIn(300);
+
+	};
+
+function cerrarModal() {
+
+	$('.fondoModal, .contenidoModal').fadeOut(500);
+	}

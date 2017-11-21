@@ -86,7 +86,7 @@ HERO
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(238,238,238,.9);
+  background-color: rgba(255,255,255,0.8);
 
   }
 
@@ -114,10 +114,10 @@ HERO
   }
 
  nav img {
-	height: 60px;
+	   height: 60px;
     margin-left: 15px;
     margin-top: 0px;
-    opacity: .8;
+
 
 }
 
@@ -154,6 +154,7 @@ INICIO
 	text-align:center;
 }
 
+
 .paddingExtra{
 
 	padding:120px;
@@ -178,12 +179,7 @@ INICIO
 }
 
 
-#video {
-	width: 600px;
-	margin-left: 50%;
-	margin-top: 200px;
-	transform: translate(-300px);
-}
+
 
 /*------------------------------------------------------
 CENTRO
@@ -194,7 +190,7 @@ CENTRO
   display: inline-block;
   text-align: left;
   line-height: 50px;
-  color: #131e60;
+  color: #fff;
   padding-bottom:50px;
 
 }
@@ -206,10 +202,10 @@ CENTRO
 }
 
 .asimetrico {
-  color: #131e60;
+  color: #fff;
   padding: 60px 0;
   text-align: center;
-  background: #fff;
+  background: #3b5998;
   position: relative;
   z-index: 1;
 
@@ -237,8 +233,13 @@ CENTRO
   transform: skewY(-3deg);
   transform-origin: 100%;
 }
+
+#video {
+  width: 600px;
+
+}
 /*------------------------------------------------------
-TRATAMIENTOS
+SERVICIOS
 ------------------------------------------------------*/
 
 #servicios{
@@ -294,7 +295,6 @@ TRATAMIENTOS
   opacity: 0;
   padding:  50px auto;
   transition: all .7s;
-  min-height: 280px;
 }
 
 #servicios .boton.visible {
@@ -302,12 +302,6 @@ TRATAMIENTOS
   padding: 40px auto;
     
 }
-
-#servicios p {
-
-    font-size: 0.6em;
-
-    }
 
 
 .fondoModal {
@@ -336,19 +330,21 @@ TRATAMIENTOS
   }
     
 
-#tratamientos .container {
+#servicios .container {
     width: 1000px;
-    border: 1px solid;
+    height:500px;
   }
 
-#tratamientos .box {          
+#servicios .box {          
     text-align: center;
     width: 50%;
-    border: 1px solid red;
     float: left;
-    background: rgba(0,0,0,.2);
     box-sizing: border-box;
   } 
+
+.clear{
+    clear:both;
+  }
 
 /*------------------------------------------------------
 CONTACTO
@@ -357,7 +353,6 @@ CONTACTO
   background-color: #fff;
 
 }
-
 
 iframe{
 
