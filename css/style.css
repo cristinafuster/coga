@@ -190,7 +190,7 @@ CENTRO
   display: inline-block;
   text-align: left;
   line-height: 50px;
-  color: #fff;
+  color: #131e60;
   padding-bottom:50px;
 
 }
@@ -201,11 +201,11 @@ CENTRO
   font-size: 17px;
 }
 
-.asimetrico {
-  color: #fff;
+#centro.asimetrico {
+  color: #131e60;
   padding: 60px 0;
   text-align: center;
-  background: #3b5998;
+  background: #fff;
   position: relative;
   z-index: 1;
 
@@ -234,10 +234,7 @@ CENTRO
   transform-origin: 100%;
 }
 
-#video {
-  width: 600px;
 
-}
 /*------------------------------------------------------
 SERVICIOS
 ------------------------------------------------------*/
