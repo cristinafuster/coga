@@ -241,12 +241,12 @@ CENTRO
 TRATAMIENTOS
 ------------------------------------------------------*/
 
-#tratamientos{
+#servicios{
 
   background-color: #fff;
 }
 
-#tratamientos [class^="flaticon-"]::before {
+#servicios [class^="flaticon-"]::before {
   color: #007db6;
   font-size: 3em !important;
   text-align: center;
@@ -290,53 +290,65 @@ TRATAMIENTOS
 }
 
 /*para hacerlo visible:*/
-#tratamientos .boton {
+#servicios .boton {
   opacity: 0;
   padding:  50px auto;
   transition: all .7s;
   min-height: 280px;
 }
 
-#tratamientos .boton.visible {
+#servicios .boton.visible {
   opacity: 1;
   padding: 40px auto;
     
 }
 
-#tratamientos p {
+#servicios p {
 
     font-size: 0.6em;
 
     }
 
 
-    .fondoModal {
+.fondoModal {
 
-      
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      background-color: #898fb1;
-      display: none;
-      color: #eee;
-      z-index:999;
-    }
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #898fb1;
+    display: none;
+    color: #eee;
+    z-index:999;
+  }
 
-    .contenidoModal {
-      background-color: white;
-      border-radius: 15px;
-      padding: 20px 10px 20px 10px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      background: url('src/logo.png') no-repeat center / cover;
-      display: none;
-      text-align:justify;
-    }
+.contenidoModal {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url('src/logo.png') no-repeat center / cover;
+    display: none;
+  }
     
+
+#tratamientos .container {
+    width: 1000px;
+    border: 1px solid;
+  }
+
+#tratamientos .box {          
+    text-align: center;
+    width: 50%;
+    border: 1px solid red;
+    float: left;
+    background: rgba(0,0,0,.2);
+    box-sizing: border-box;
+  } 
 
 /*------------------------------------------------------
 CONTACTO
