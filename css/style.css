@@ -30,34 +30,38 @@ p {
 h1 span {
 	display: none;
   color: #002e43;
-  font-size:0.95em;
+  font-size:0.8em;
 }
 
+h2{
+  letter-spacing: 10px;
+}
 h2, h3{
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
-    letter-spacing:10px;
+    font-weight: 700;
+}
+
+h2, h3, h4{
+
+    line-height: 2.5em;
 }
 
 
 h2 {
-    font-size: 2.2em;
-    font-weight: 600;
-    line-height: 2em;
+    font-size: 2.6em;
+    
 }
 
 h3 {
-    font-size: 1em;
-    letter-spacing: 6px;
-    line-height: 1.8em;
-    font-weight: 700;
-
+    font-size: 1.1em;
+    letter-spacing: 5px;
 }
 
 h4 {
     font-size: 1.1em;
-    letter-spacing: 3px;
-    line-height: 1.8em;
+    letter-spacing: 2.6px;
+    
 }
 
 
@@ -67,27 +71,22 @@ h4 {
 }
 
 
+.boton {
+    
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  transition: all 1s cubic-bezier(.33,.62,.38,.97);
+  color: #002e43; 
+  text-align:center;
+  margin-top: 10px;
+  overflow:hidden;   
+  border: 2px solid rgba(0,46,67,.1);
+}
+
 /*------------------------------------------------------
 HERO
 ------------------------------------------------------*/
-.hero{
 
-  background: url("../img/bg_ilustracionojo.jpg") no-repeat fixed center / cover;
-  height: 100vh;
-  position: relative;
-
-  }   
-
-.hero::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(255,255,255,0.97);
-
-  }
 
 .barras {
         display: none;
@@ -102,7 +101,7 @@ HERO
  nav{
   	width: 100%;
   	height: 100px;
-    background: rgba(255,255,255,.4);	
+    background: rgba(255,255,255,.3);	
     letter-spacing: 2px;
     top: 0;
     left:0;
@@ -113,7 +112,7 @@ HERO
   }
 
  nav img {
-	   height: 40px;
+	   height: 60px;
     margin-left: 15px;
     margin-top: 0px;
 
@@ -134,7 +133,8 @@ HERO
 
 
 nav a {
-	color:#131e60;
+	   color:#131e60;
+    text-shadow: 0 0 2px #eee, 0 0 2px #eee, 0 0 2px #eee;
     line-height: 60px;
     padding: 10px 10px;
     display: block;
@@ -144,6 +144,24 @@ nav a {
     text-decoration:none;
 }
 
+.hero{
+
+  background: url("../img/bg_ilustracionojoazul2.png") no-repeat fixed center / cover;
+  height: 100vh;
+  position: relative;
+
+  }   
+
+.hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.89);
+
+  }
 
 /*------------------------------------------------------
 INICIO
@@ -153,23 +171,19 @@ INICIO
 	text-align:center;
 }
 
-
-.paddingExtra{
-
-	padding:120px;
-
-}
-
-#inicio span{
+#inicio li span{
     font-family: "Dosis", sans-serif;
-    font-size: 6em;
+    font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    line-height: 1.7em;
+    line-height: 1.5em;
     font-weight:700;
-    color: #131e60;
-    text-shadow: 0 0 6px #fdfce8, 0 0 6px #fdfce8, 0 0 6px #fdfce8;
   }
+
+#inicio h2{
+  text-shadow: 0 0 2px #131e60, 0 0 2px #131e60, 0 0 2px #131e60;
+  color:#e8dd00;
+}
 
 
 #inicio ul{
@@ -178,19 +192,71 @@ INICIO
 }
 
 
+.paddingExtra{
+
+  padding:120px;
+
+}
+
+
+/*------------------------------------------------------
+SERVICIOS
+------------------------------------------------------*/
+
+
+.boton.blanco {
+  background: rgba(19,30,96,.7);
+  color:#eee; 
+  border: 3px solid rgba(0,46,67,0.5);
+}
+
+.boton:hover {
+  background-color: rgba(59, 89, 152,.9);
+  padding: 20px 50px;
+  border: 3px solid rgba(0,46,67,.9);
+  color: #eee;
+}
+
+.boton.amarillo:hover { 
+  background-color: rgba(232,221,0);
+  color:#131e60;
+  padding: 20px 50px 20px 50px;
+  text-decoration: none;
+  border: 3px solid #eee;
+}
+
+/*para hacerlo visible:*/
+
+#servicios .boton {
+  opacity: 0;
+  padding:  50px auto;
+  transition: all .7s;
+}
+
+#servicios .boton.visible {
+  opacity: 1;
+  padding: 40px auto;
+    
+}
+
+#servicios a{
+
+color: rgba(232,221,0);
+font-weight: 700;
+
+}
+
+    
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
-#centro h2{
-  color: #fff;
-}
+
 
 #centro ul{
 
   display: inline-block;
   text-align: left;
   line-height: 50px;
-  color: #fff;
   padding-bottom:50px;
 
 }
@@ -204,7 +270,7 @@ CENTRO
 .asimetrico {
   padding: 60px 0;
   text-align: center;
-  background: rgba(137, 143,177,.8);
+  background: rgba(232,221,0,.5);
   position: relative;
   z-index: 1;
 
@@ -234,84 +300,6 @@ CENTRO
   transform-origin: 100%;
 }
 
-.boton {
-    
-  display: inline-block;
-  padding: 10px 30px 10px 30px;
-  transition: all 1s cubic-bezier(.33,.62,.38,.97);
-  color: #002e43; 
-  text-align:center;
-  margin-top: 10px;
-  overflow:hidden;   
-  border: 2px solid rgba(0,46,67,.1);
-}
-    
-/*------------------------------------------------------
-SERVICIOS
-------------------------------------------------------*/
-
-
-.boton.blanco {
-  background: #131e60;
-  color:#eee; 
-  border: 3px solid rgba(0,46,67,0.5);
-}
-
-.boton:hover {
-  background-color: rgba(59, 89, 152);
-  padding: 20px 50px;
-  border: 3px solid rgba(0,46,67,.9);
-  color: #eee;
-}
-
-.boton.naranja:hover { 
-  background: orange;
-  color:#131e60;
-  padding: 20px 50px 20px 50px;
-  text-decoration: none;
-  border: 3px solid rgba(137, 143,177);
-}
-
-/*para hacerlo visible:*/
-
-#servicios .boton {
-  opacity: 0;
-  padding:  50px auto;
-  transition: all .7s;
-}
-
-#servicios .boton.visible {
-  opacity: 1;
-  padding: 40px auto;
-    
-}
-
-
-.fondoModal {
-
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: #898fb1;
-    display: none;
-    color: #eee;
-    z-index:999;
-  }
-
-.contenidoModal {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: url('src/logo.png') no-repeat center / cover;
-    display: none;
-  }
-    
 
 /*------------------------------------------------------
 CONTACTO
@@ -367,16 +355,10 @@ footer small p{
 }
 
 footer{
-  background: rgba(137, 143,177,.2);
+  background: rgba(19,30,96,.5);
 }
 
 
-/*
-898fb1 azul pupila
-fdfce8 amarillo ojo
-131e60 azul letras
-
-*/
 
 @media screen and (max-width: 800px) {
 
@@ -515,3 +497,10 @@ nav li:last-of-type a{
 }
 
 }
+
+
+/*color amarillo #e8dd00/  232,221,0*
+/* color azul claro #002e43/*
+/* azul oscuro #131e60/*  19,30,96
+
+fff= 255,255,255
