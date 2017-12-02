@@ -506,25 +506,24 @@ footer{
 
  .boton {   
 
-    padding: 10px;
+    padding: 10px auto;
  }
 
   #servicios .boton {
 
-  padding:  20px auto;
+  padding:  10px auto;
 
 }
 
   #servicios .boton.visible {
 
-  padding: 20px auto;
+  padding: 10px auto;
 }
     
  .boton.externo {
     
-
-    padding: 0px 10px 0px 10px;
     max-height: 250px;
+    max-width: auto;
     
 }
 
