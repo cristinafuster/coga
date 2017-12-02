@@ -49,13 +49,13 @@ h2, h3, h4{
 
 
 h2 {
-    font-size: 2.6em;
+    font-size: 2.4em;
     
 }
 
 h3 {
-    font-size: 1.1em;
-    letter-spacing: 5px;
+    font-size: 1.3em;
+    letter-spacing: 4.8px;
 }
 
 h4 {
@@ -76,11 +76,12 @@ h4 {
   display: inline-block;
   padding: 10px 30px 10px 30px;
   transition: all 1s cubic-bezier(.33,.62,.38,.97);
-  color: #002e43; 
+  color: #131e60; 
   text-align:center;
   margin-top: 10px;
   overflow:hidden;   
-  border: 2px solid rgba(0,46,67,.1);
+  border: 3px solid rgba(0,46,67,.1);
+  background:#fff;
 }
 
 /*------------------------------------------------------
@@ -101,7 +102,7 @@ HERO
  nav{
   	width: 100%;
   	height: 100px;
-    background: rgba(255,255,255,.3);	
+    background: rgba(255,255,255,.97);	
     letter-spacing: 2px;
     top: 0;
     left:0;
@@ -112,11 +113,9 @@ HERO
   }
 
  nav img {
-	   height: 60px;
+	   height: 50px;
     margin-left: 15px;
     margin-top: 0px;
-
-
 }
 
  nav ul {
@@ -159,7 +158,7 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,.89);
+  background-color: rgba(255,255,255,.92);
 
   }
 
@@ -178,12 +177,11 @@ INICIO
     letter-spacing: 5px;
     line-height: 1.5em;
     font-weight:700;
+    text-shadow: 0 0 2px #131e60, 0 0 2px #131e60, 0 0 2px #131e60;
+    color:#e8dd00;
   }
 
-#inicio h2{
-  text-shadow: 0 0 2px #131e60, 0 0 2px #131e60, 0 0 2px #131e60;
-  color:#e8dd00;
-}
+
 
 
 #inicio ul{
@@ -203,27 +201,38 @@ INICIO
 SERVICIOS
 ------------------------------------------------------*/
 
+/*amarillo #e8dd00  232,221,0 
+ azul claro #002e43 
+ azul oscuro #131e60 19,30,96*/
 
-.boton.blanco {
-  background: rgba(19,30,96,.7);
+ #servicios{
+
+    background: rgba(19,30,96,.75);
+ }
+
+ #servicios h2{
+  text-shadow: 0 0 3px #eee, 0 0 3px #eee, 0 0 3px #eee;
+ }
+
+.boton.azul {
+  background: rgba(19,30,96,.9);
   color:#eee; 
-  border: 3px solid rgba(0,46,67,0.5);
+  border: 3px solid rgba(0,46,67,0.9);
 }
 
 .boton:hover {
-  background-color: rgba(59, 89, 152,.9);
-  padding: 20px 50px;
+  background-color: #eee;
   border: 3px solid rgba(0,46,67,.9);
-  color: #eee;
+  color: #131e60;
 }
 
 .boton.amarillo:hover { 
-  background-color: rgba(232,221,0);
+  background-color: rgba(232,221,0); /*amarillo*/
   color:#131e60;
-  padding: 20px 50px 20px 50px;
   text-decoration: none;
   border: 3px solid #eee;
 }
+
 
 /*para hacerlo visible:*/
 
@@ -239,19 +248,15 @@ SERVICIOS
     
 }
 
-#servicios a{
 
-color: rgba(232,221,0);
-font-weight: 700;
-
-}
 
     
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
-
-
+#centro h2{
+ text-shadow: 0 0 4px #eee, 0 0 4px #eee, 0 0 4px #eee;
+}
 #centro ul{
 
   display: inline-block;
@@ -270,9 +275,10 @@ CENTRO
 .asimetrico {
   padding: 60px 0;
   text-align: center;
-  background: rgba(232,221,0,.5);
   position: relative;
   z-index: 1;
+  background:rgba(232,221,0);
+  background: rgba(19,30,96,.75);
 
 }
 
@@ -285,29 +291,27 @@ CENTRO
   position: absolute;
   right: 0;
   z-index: -1;
-  visibility: hidden;
+  background:rgba(232,221,0);
 }
 
 .asimetrico:before {
   top: 0;
   transform: skewY(-4deg);
   transform-origin: 100% 0;
+  
 }
  
 .asimetrico:after {
   bottom: 0;
   transform: skewY(-3deg);
   transform-origin: 100%;
+  
 }
-
 
 /*------------------------------------------------------
 CONTACTO
 ------------------------------------------------------*/
-#contacto{
-  background-color: #fff;
 
-}
 
 iframe{
 
