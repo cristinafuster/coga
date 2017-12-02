@@ -102,15 +102,14 @@ HERO
  nav{
   	width: 100%;
   	height: 100px;
-    background: rgba(255,255,255,.97);	
+    background: rgba(255,255,255,.9);	
     letter-spacing: 2px;
     top: 0;
     left:0;
     transition: all .5s;
     position: fixed;
     z-index:2;
-
-  }
+      }
 
  nav img {
 	   height: 50px;
@@ -145,7 +144,7 @@ nav a {
 
 .hero{
 
-  background: url("../img/bg_ilustracionojoazul2.png") no-repeat fixed center / cover;
+  background: url("../img/bg_ilustracionojoazul.png") no-repeat fixed center / cover;
   height: 100vh;
   position: relative;
 
@@ -158,7 +157,7 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,.92);
+  background-color: rgba(255,255,255,.9);
 
   }
 
@@ -182,7 +181,10 @@ INICIO
   }
 
 
+#inicio h2, h3{
 
+      text-shadow: 0 0 4px #eee, 0 0 4px #eee, 0 0 4px #eee;
+}
 
 #inicio ul{
 
@@ -247,8 +249,6 @@ SERVICIOS
   padding: 40px auto;
     
 }
-
-
 
     
 /*------------------------------------------------------

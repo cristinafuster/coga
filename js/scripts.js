@@ -5,8 +5,7 @@ $(window).on('scroll', efectosScroll);
 $(document).ready(function(){
 
 	$('.barras').on('click', muestraMenu);
-	$('.botonModal').on('click', mostrarModal);
-	$('.cerrarModal').on('click', cerrarModal);
+
 
 });
 
@@ -35,17 +34,3 @@ function mostrarMenu() {
 	$('.menu').toggleClass('abierto');
 	}
 
-function mostrarModal() {
-
-	let numeroModal = $(this).data('numero');
-
-	$('.contenidoModal[data-contenido=' + numeroModal + ']').show();
-
-	$('.fondoModal').fadeIn(300);
-
-	};
-
-function cerrarModal() {
-
-	$('.fondoModal, .contenidoModal').fadeOut(500);
-	}
