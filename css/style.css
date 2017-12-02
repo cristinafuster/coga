@@ -244,11 +244,19 @@ SERVICIOS
   transition: all .7s;
 }
 
+#servicios .boton.externo {
+
+min-height: 280px;
+min-width: 290px;
+}
+
 #servicios .boton.visible {
   opacity: 1;
   padding: 40px auto;
     
 }
+
+
 
     
 /*------------------------------------------------------
@@ -371,6 +379,11 @@ footer{
     padding:25px;
   }
 
+  .barras p{
+
+    font-size: .2em;
+  }
+
    nav {
     width: 200px;
     height: 100vh;
@@ -394,12 +407,12 @@ footer{
     line-height:20px;
 }
 
-nav img{
+  nav img{
     display: block;
     margin: 10px auto 0;
 }
 
-nav li:last-of-type a{
+  nav li:last-of-type a{
     border:none;
 }
 
@@ -423,22 +436,31 @@ nav li:last-of-type a{
   }
 
 
-  #inicio span{
-    font-size: 1.8em;
+  #inicio h1 span{
+    font-size: 1em;
 }
 
+#inicio li span{
+    font-family: "Dosis", sans-serif;
+    font-size: 3em;
+
+    }
+
+  #inicio h2{
+    font-size: 1em;
+}
 
   #inicio h3{
     font-size: .8em;
 }
 
   #inicio h4{
-    font-size: .8em;
+    font-size: .7em;
 }
 
 
   #inicio .padding-section{
-  padding: 50px auto 0;
+  padding:80px, auto;
 }
 
 
@@ -448,42 +470,14 @@ nav li:last-of-type a{
 
 
 
-  iframe{
+ iframe{
 
     float: none;
     margin: 5px auto 5px auto;
+    width: 70%;
     
   }
     
-
-  .padding-section{
-    padding:40px;
-  }
-
-
-.breadcrumbs {
-  margin: 20px;
-  font-size: .8em;
-
-  }
-
-
-.breadcrumbs li::after {
-  content: " / ";
-  margin: 0 1px;
-  opacity: .4;
- }
-
-  #aseguradoras p {
-
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-    line-height: 1.6em;
-  }
-
 
   #avisolegal.padding-section {
     padding: 20px;  
