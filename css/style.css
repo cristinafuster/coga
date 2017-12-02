@@ -384,6 +384,20 @@ footer{
     font-size: .2em;
   }
 
+  h2 {
+    font-size: 1.8em;
+    
+  }
+
+  h3{
+
+    font-size: 1.2em;
+  }
+
+  p{font-size: .8em;
+
+  }
+
    nav {
     width: 200px;
     height: 100vh;
@@ -438,39 +452,39 @@ footer{
 
   #inicio h1 span{
     font-size: 1em;
-}
+  }
 
-#inicio li span{
+  #inicio li span{
     font-family: "Dosis", sans-serif;
     font-size: 3em;
 
-    }
+  }
 
   #inicio h2{
     font-size: 1em;
-}
+  }
 
   #inicio h3{
     font-size: .8em;
-}
+  }
 
   #inicio h4{
     font-size: .7em;
-}
+  }
 
 
   #inicio .padding-section{
-  padding:80px, 0px, 80px 0px;
-}
+    padding:80px, 5px, 80px 5px;
+  }
 
 
   #inicio .paddingExtra{
-  padding: 0px;
-}
+    padding: 0px;
+  }
 
 
 
- iframe{
+  iframe{
 
     float: none;
     margin: 5px auto 5px auto;
@@ -479,12 +493,17 @@ footer{
   }
     
 
+    #centro li{
+text-align: center;
+
+    }
+
  .boton.externo {
     
-  display: block;
-  padding: 0px 10px 0px 10px;
-  max-height: 200px;
-  max-width: auto;
+    display: block;
+    padding: 0px 10px 0px 10px;
+    max-height: 200px;
+    max-width: auto;
   }
 
   #avisolegal.padding-section {
@@ -495,11 +514,6 @@ footer{
     font-size: 20px;  
   }
 
-
-  #contacto [class^="flaticon-"]::before {
-  display: none;
-
-}
 
 }
 
