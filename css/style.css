@@ -277,7 +277,6 @@ CENTRO
   text-align: center;
   position: relative;
   z-index: 1;
-  background:rgba(232,221,0);
   background: rgba(19,30,96,.75);
 
 }
@@ -291,7 +290,7 @@ CENTRO
   position: absolute;
   right: 0;
   z-index: -1;
-  background:rgba(232,221,0);
+  background:rgba(255,255,255);
 }
 
 .asimetrico:before {
@@ -313,7 +312,7 @@ CONTACTO
 ------------------------------------------------------*/
 
 
- #contacto iframe {
+#contacto iframe {
 
   float: left;
   margin: 25px auto 15px auto;
@@ -324,7 +323,7 @@ CONTACTO
 
 #contacto article .devider {
   width: 85%;
-  margin: 50px 5%;
+  margin: 15px 5%;
   border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
@@ -377,7 +376,7 @@ footer{
     height: 100vh;
     border-right: 1px solid #999;
     transition: all .5s;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     background:#fff;
 
   }
@@ -405,7 +404,7 @@ nav li:last-of-type a{
 }
 
   nav.abierto {
-    transform: translateX(0);
+    transform: translateY(0);
     z-index:400;
     
   }
@@ -430,7 +429,7 @@ nav li:last-of-type a{
 
 
   #inicio h3{
-    font-size: 1em;
+    font-size: .8em;
 }
 
   #inicio h4{
@@ -439,7 +438,7 @@ nav li:last-of-type a{
 
 
   #inicio .padding-section{
-  padding: 30px auto 0;
+  padding: 50px auto 0;
 }
 
 
@@ -452,7 +451,7 @@ nav li:last-of-type a{
   iframe{
 
     float: none;
-    margin: 15px auto 15px auto;
+    margin: 5px auto 5px auto;
     
   }
     
