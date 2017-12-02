@@ -430,16 +430,16 @@ footer{
     text-align: center;
     border-bottom: 1px dashed rgba(0,0,0,.05);
     line-height:20px;
-}
+  }
 
   nav img{
     display: block;
     margin: 10px auto 0;
-}
+  }
 
   nav li:last-of-type a{
     border:none;
-}
+  }
 
   nav.abierto {
     transform: translateY(0);
@@ -484,15 +484,14 @@ footer{
   }
 
 
-.padding-section {
+  .padding-section {
     padding: 60px 0px;
     
-}
-
-.paddingExtra{
-    padding: 0px;
   }
 
+  .paddingExtra{
+    padding: 0px;
+  }
 
 
   iframe{
@@ -503,15 +502,32 @@ footer{
     height:70%;
     
   }
-    
 
+
+ .boton {   
+
+    padding: 10px;
+ }
+
+  #servicios .boton {
+
+  padding:  20px auto;
+
+}
+
+  #servicios .boton.visible {
+
+  padding: 20px auto;
+}
+    
  .boton.externo {
     
 
     padding: 0px 10px 0px 10px;
-    max-height: 200px;
-    max-width: auto;
-  }
+    max-height: 250px;
+    
+}
+
 
   #avisolegal.padding-section {
     padding: 20px;  
