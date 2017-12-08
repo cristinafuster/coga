@@ -40,11 +40,14 @@ h2, h3{
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    text-shadow: 0 0 5px #eee, 0 0 5px #eee, 0 0 5px #eee;
+    text-align: center;
 }
 
 h2, h3, h4{
 
     line-height: 2.5em;
+
 }
 
 
@@ -57,6 +60,8 @@ h3 {
     font-size: 1.3em;
     letter-spacing: 4.8px;
 }
+
+
 
 h4 {
     font-size: 1.1em;
@@ -181,11 +186,6 @@ INICIO
   }
 
 
-#inicio h2, h3{
-
-      text-shadow: 0 0 4px #eee, 0 0 4px #eee, 0 0 4px #eee;
-}
-
 #inicio ul{
 
   list-style: none;
@@ -275,6 +275,8 @@ CENTRO
   grid-template-columns:repeat(2, 1fr);
   grid-gap:1em;
   grid-auto-rows:minmax(100px, auto);
+  padding:30px;
+  text-align:center;
 
 }
 
@@ -301,39 +303,20 @@ CENTRO
   margin: 0;
 }
 
-.asimetrico {
-  padding: 60px 0;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  background: rgba(19,30,96,.75);
-
-}
-
-.asimetrico:before, .asimetrico:after {
-  background: inherit;
-  content: '';
-  height: 50%;
-  width: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  background:rgba(255,255,255);
-}
-
-.asimetrico:before {
-  top: 0;
-  transform: skewY(-5deg);
-  transform-origin: 100% 0;
+/*------------------------------------------------------
+PROFESIONALES
+------------------------------------------------------*/
+#profesionales .wrapper{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:1em;
+  grid-auto-rows: minmax(100px, auto);
+  text-align:center;
   
 }
- 
-.asimetrico:after {
-  bottom: 0;
-  transform: skewY(-2deg);
-  transform-origin: 100%;
-  
+
+#profesionales{
+  background:rgba(232,221,0,.6) ;
 }
 
 /*------------------------------------------------------
@@ -540,8 +523,11 @@ footer{
   grid-auto-rows:minmax(100px, auto);
 }
 
-#centro{
-  text-align:center;
+
+#profesionales .wrapper{
+  grid-template-columns:repeat(1, 1fr);
+
+
 }
 
   #avisolegal.padding-section {
