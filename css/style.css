@@ -78,7 +78,7 @@ h4 {
   transition: all 1s cubic-bezier(.33,.62,.38,.97);
   color: #131e60; 
   text-align:center;
-  margin-top: 10px;
+  margin: 10px;
   overflow:hidden;   
   border: 3px solid rgba(0,46,67,.1);
   background:#fff;
@@ -200,6 +200,10 @@ INICIO
 
 }
 
+ #inicio img {
+     height: 50px;
+
+}
 
 /*------------------------------------------------------
 SERVICIOS
@@ -208,6 +212,22 @@ SERVICIOS
 /*amarillo #e8dd00  232,221,0 
  azul claro #002e43 
  azul oscuro #131e60 19,30,96*/
+#servicios .wrapper{
+  display:grid;
+  grid-template-columns:repeat(1, 1fr);
+  grid-gap:1em;
+  grid-auto-rows:minmax(100px, auto);
+
+}
+
+#servicios .nested{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:1em;
+  grid-auto-rows:minmax(100px, auto);
+}
+
+
 
  #servicios{
 
@@ -236,29 +256,6 @@ SERVICIOS
   text-decoration: none;
   border: 3px solid #eee;
 }
-
-
-/*para hacerlo visible:*/
-
-#servicios .boton {
-  opacity: 0;
-  padding:  50px auto;
-  transition: all .7s;
-}
-
-#servicios .boton.externo {
-
-min-height: 310px;
-
-}
-
-#servicios .boton.visible {
-  opacity: 1;
-  padding: 40px auto;
-    
-}
-
-
 
     
 /*------------------------------------------------------
@@ -504,22 +501,17 @@ footer{
   }
 
 
- .boton {   
+#servicios .wrapper{
 
-    padding: 10px auto;
- }
-
-  #servicios .boton {
-
-  padding:  10px auto;
+  grid-auto-rows:minmax(50px, auto);
 
 }
 
-  #servicios .boton.visible {
-
-  padding: 10px auto;
+#servicios .nested{
+ 
+  grid-template-columns:repeat(1, 1fr);
+  grid-auto-rows:minmax(50px, auto);
 }
-    
 
 
   #avisolegal.padding-section {
