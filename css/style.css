@@ -258,7 +258,31 @@ SERVICIOS
   border: 3px solid #eee;
 }
 
-    
+/*------------------------------------------------------
+OPTOMETRIA
+------------------------------------------------------*/  
+
+#optometria{
+
+        width: 700px;
+        margin: auto;
+        line-height: 24px;
+        font-size: 1em;
+        background-color: rgba(232,221,0,.7);
+        padding: 50px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
@@ -515,6 +539,14 @@ footer{
   grid-template-columns:repeat(1, 1fr);
   grid-auto-rows:minmax(50px, auto);
 }
+
+
+#optometria{
+
+        width:auto;
+
+  }   
+  
 
 #centro .nested{
   display:grid;
