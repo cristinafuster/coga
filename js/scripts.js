@@ -1,7 +1,6 @@
 
-$(window).on('scroll', efectosScroll);
+$(window).on('scroll', efectosScroll, parallax);
 
-$(window).on('scroll', parallax);
 
 
 $(document).ready(function(){

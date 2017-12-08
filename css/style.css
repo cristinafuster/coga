@@ -262,9 +262,9 @@ SERVICIOS
 OPTOMETRIA
 ------------------------------------------------------*/  
 
-section{
+#optometria{
 
-        width: 400px;
+        width: 600px;
         margin: auto;
         line-height: 24px;
         font-size: 1em;
@@ -272,7 +272,11 @@ section{
         padding: 50px;
       }
 
+#optometria h2{
 
+  font-size: 2em;
+  line-height: 2em;
+}
 .bg,.bg2,.bg1 {
         background: url('../img/foto_consulta1.jpg');
         background-size: cover;
@@ -302,7 +306,7 @@ section{
       }
 
   .bg3 {
-        background: url('../img/logoamarillo.png') no-repeat center / contain;
+        background: url('../img/logoamarilloletra.png') no-repeat center / contain;
         position: fixed;
         width: 500px;
         height: 400px;
