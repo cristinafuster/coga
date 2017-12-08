@@ -1,6 +1,8 @@
 
 $(window).on('scroll', efectosScroll);
 
+$(window).on('scroll', parallax);
+
 
 $(document).ready(function(){
 
@@ -45,3 +47,14 @@ function navegar(){
 	$('.menu').removeClass('abierto');
 }
 
+
+
+function parallax(){
+
+	var scrolled = $(window).scrollTop();
+
+		  $('.bg').css('left', - (scrolled * 0.05));
+		  $('.bg1').css('right', - (scrolled * .3));
+		  $('.bg2').css('right', - (scrolled * .6));
+		  $('.bg3').css('transform', 'translateY(' + (-scrolled * .09) + 'px)');
+}
