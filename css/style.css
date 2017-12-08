@@ -540,6 +540,9 @@ footer{
   grid-auto-rows:minmax(100px, auto);
 }
 
+#centro{
+  text-align:center;
+}
 
   #avisolegal.padding-section {
     padding: 20px;  
