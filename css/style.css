@@ -236,6 +236,7 @@ SERVICIOS
 
  #servicios h2{
   text-shadow: 0 0 3px #eee, 0 0 3px #eee, 0 0 3px #eee;
+  text-align:center;
  }
 
 .boton.azul {
@@ -261,9 +262,28 @@ SERVICIOS
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
+#centro .wrapper{
+  display:grid;
+  grid-template-columns:repeat(1, 1fr);
+  grid-gap:1em;
+  grid-auto-rows:minmax(100px, auto);
+
+}
+
+#centro .nested{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:1em;
+  grid-auto-rows:minmax(100px, auto);
+
+}
+
+
 #centro h2{
  text-shadow: 0 0 4px #eee, 0 0 4px #eee, 0 0 4px #eee;
+ text-align:center;
 }
+
 #centro ul{
 
   display: inline-block;
@@ -304,14 +324,14 @@ CENTRO
 
 .asimetrico:before {
   top: 0;
-  transform: skewY(-4deg);
+  transform: skewY(-5deg);
   transform-origin: 100% 0;
   
 }
  
 .asimetrico:after {
   bottom: 0;
-  transform: skewY(-3deg);
+  transform: skewY(-2deg);
   transform-origin: 100%;
   
 }
@@ -511,6 +531,13 @@ footer{
  
   grid-template-columns:repeat(1, 1fr);
   grid-auto-rows:minmax(50px, auto);
+}
+
+#centro .nested{
+  display:grid;
+  grid-template-columns:repeat(1, 1fr);
+  grid-gap:1em;
+  grid-auto-rows:minmax(100px, auto);
 }
 
 
