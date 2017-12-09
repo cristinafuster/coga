@@ -276,8 +276,8 @@ OPTOMETRIA
 
 .wrapper>article{
 
-  background:#eee;
-  padding:10px;
+  background:rgba(232,221,0,.7);
+  padding:20px;
 
 }
 
@@ -287,16 +287,20 @@ OPTOMETRIA
   line-height: 2em;
 }
 
-#optometria article li{
-
-  list-style: none;
+#optometria h5{
+  text-align:center;
 }
+#optometria h4{
 
-
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align:center;
+}
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
-#centro .wrapper{
+#centro .wrapper {
   display:grid;
   grid-template-columns:repeat(1, 1fr);
   grid-gap:1em;
