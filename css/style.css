@@ -19,13 +19,17 @@ aside{
 
 }
 
-p {
+p, h5 {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
     font-size: 1em;
 
     }
 
+h5{
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 h1 span {
 	display: none;
@@ -68,6 +72,7 @@ h4 {
     letter-spacing: 2.6px;
     
 }
+
 
 
 .padding-section {
@@ -260,60 +265,32 @@ SERVICIOS
 /*------------------------------------------------------
 OPTOMETRIA
 ------------------------------------------------------*/  
+#optometria .wrapper{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:2.5em;
+  grid-auto-rows:minmax(100px, auto);
+  text-align:justify;
 
-#optometria{
+}
 
-        width: 600px;
-        margin: auto;
-        line-height: 24px;
-        font-size: 1em;
-        background-color: rgba(255,255,255,.7);
-        padding: 50px;
-      }
+.wrapper>article{
+
+  background:#eee;
+  padding:10px;
+
+}
 
 #optometria h2{
 
   font-size: 2em;
   line-height: 2em;
 }
-.bg,.bg2,.bg1 {
-        background: url('../img/foto_consulta1.jpg');
-        background-size: cover;
-        position: fixed;
-        width: 150%;
-        height: 100%;
-        bottom:0;
-        left:0;
-        z-index: -1;
-      }
 
+#optometria article li{
 
-.bg1 {
-        background: url('../img/nubes.png');
-        width: 300%;
-        top: 0;
-        right: 0;
-        left: auto;
-      }
-
-  .bg2 {
-        background: url('../img/nubes2.png');
-        width: 300%;
-        top: 0;
-        right: 0;
-        left: auto;
-      }
-
-  .bg3 {
-        background: url('../img/logoamarilloletra.png') no-repeat center / contain;
-        position: fixed;
-        width: 200px;
-        height: 400px;
-        bottom: 0;
-        right:50px;
-        z-index: -1;
-      }
-
+  list-style: none;
+}
 
 
 /*------------------------------------------------------
@@ -334,6 +311,7 @@ CENTRO
   grid-auto-rows:minmax(100px, auto);
   padding:30px;
   text-align:center;
+
 
 }
 
@@ -449,7 +427,7 @@ footer{
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     
   }
 
@@ -463,7 +441,7 @@ footer{
     font-size: .9em;
   }
 
-  p{font-size: .8em;
+  p, h5, #optometria li{font-size: .8em;
 
   }
 
@@ -533,9 +511,7 @@ footer{
 
   }
 
-  #inicio h2{
-    font-size: 1em;
-  }
+
 
   #inicio h3{
     font-size: .8em;
@@ -579,12 +555,17 @@ footer{
 }
 
 
-#optometria{
 
-        width:auto;
+#optometria .wrapper{
+  grid-template-columns:repeat(1, 1fr);
 
-  }   
-  
+  }
+
+  #optometria h2{
+
+    font-size:1em;
+    letter-spacing: .5em;
+  }
 
 #centro .nested{
   display:grid;

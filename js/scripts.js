@@ -1,5 +1,5 @@
 
-$(window).on('scroll', efectosScroll, parallax);
+$(window).on('scroll', efectosScroll);
 
 
 
@@ -47,13 +47,3 @@ function navegar(){
 }
 
 
-
-function parallax(){
-
-	var scrolled = $(window).scrollTop();
-
-		  $('.bg').css('left', - (scrolled * 0.05));
-		  $('.bg1').css('right', - (scrolled * .3));
-		  $('.bg2').css('right', - (scrolled * .6));
-		  $('.bg3').css('transform', 'translateY(' + (-scrolled * .09) + 'px)');
-}
