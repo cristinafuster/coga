@@ -89,20 +89,6 @@ h4 {
 }
 
 
-.boton {
-    
-  display: inline-block;
-  padding: 10px 30px 10px 30px;
-  transition: all 1s cubic-bezier(.33,.62,.38,.97);
-  color: #342a5f; 
-  text-align:center;
-  margin: 10px;
-  overflow:hidden;   
-  border: 3px solid rgba(0,46,67,.1);
-  background:#fff;
-}
-
-
 /*------------------------------------------------------
 HEADER
 ------------------------------------------------------*/
@@ -121,18 +107,18 @@ HEADER
  nav{
   	width: 100%;
   	height: 100px;
-    background: rgba(255, 255, 255);	
+    background: rgba(255, 255, 255,.99);	
     top: 0;
     left:0;
     transition: all .5s;
     position: fixed;
     z-index:2;
-    border-bottom: 1px solid #342a5f;
+   
       }
 
  nav img {
-	   height: 75px;
-    margin-left: 60px;
+	  height: 60px;
+    margin-left: 50px;
     margin-top: 0px;
 }
 
@@ -187,21 +173,17 @@ INICIO
 
 background-color: rgba(255, 255, 255, .6);
 margin-bottom: 15px;
-border: 1px solid #342a5f;
 
 }
 
 
 .paddingExtra{
 
-  padding:80px  0px;
+  padding:120px  0px;
 
 }
 
- #inicio img {
-     height: 150px;
 
-}
 
 /*------------------------------------------------------
 SERVICIOS
@@ -212,33 +194,49 @@ SERVICIOS
   text-align:center;
  }
 
-.boton.azul {
-  background: rgba(144, 126, 161);
-  color:#eee; 
-  border: 3px solid rgba(0,46,67,0.9);
+ .boton {
+    
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  transition: all 1s cubic-bezier(.33,.62,.38,.97);
+  text-align:center;
+  margin: 10px;
+  overflow:hidden;   
+  background-color: rgba(48, 71, 214,.2); /*azul claro*/
+  color: #342a5f;
+  border: 1px solid rgba(0,46,67,0.5);
 }
 
-.boton.violeta:hover{
+#servicios h4, #centro h4{
 
- background: #907ea1;
+  font-weight: 700;
+  text-transform: uppercase;
+  
 }
 
-.boton.verde:hover{
+.boton .blanco{
+  background: #fff;
+  border: 1px solid rgba(0,46,67,0.5);
 
-  background: #8fa17e;
 }
+
+
 
 .boton:hover {
-  background-color: #eee;
-  border: 3px solid rgba(0,46,67,.9);
-  color: #131e60;
+  background-color: rgba(245, 207, 5, .9);
+  border: 1px solid rgba(0,46,67,.9);
+  text-decoration: none;
+  
+  
 }
 
-.boton.amarillo:hover { 
-  background-color: #d1d8fd; /*amarillo*/
-  color:#131e60;
+.boton.blanco:hover { 
   text-decoration: none;
-  border: 3px solid #eee;
+  background: rgba(52, 42, 95, .9);
+  color: #fff;
+  
+  
+  
 }
 
 /*------------------------------------------------------
@@ -261,29 +259,18 @@ OPTOMETRIA
   font-size: 1em;
   text-align:center;
 }
+
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
 
 #centro h2{
- text-shadow: 0 0 4px #eee, 0 0 4px #eee, 0 0 4px #eee;
+ text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
 }
 
-#centro ul{
+#centro{
 
-  display: inline-block;
-  text-align: left;
-  line-height: 50px;
-  padding-bottom:50px;
-
-}
-
-#centro li{
-
-  list-style: none;
-  font-size: 17px;
-  padding: 0;
-  margin: 0;
+  text-align:justify;
 }
 
 /*------------------------------------------------------
@@ -291,8 +278,6 @@ PROFESIONALES
 ------------------------------------------------------*/
 
 #profesionales{
-
-  background:rgba(232,221,0,.6);
 
   text-align:center;
 }
@@ -507,7 +492,7 @@ footer{
 
 azul oscuro logo: 
 
-#131e60
+#342a5f
 
 azul claro logo:
 
@@ -539,9 +524,9 @@ verde: #8fa17e   254, 247, 209
 
 
 
-AMARILLOS
+AMARILLOS tono más fuerte
 
-CLARO:  FBE739;
-251, 231, 57
+CLARO:  
+245, 207, 5
 
 */
