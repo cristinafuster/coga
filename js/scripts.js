@@ -5,31 +5,27 @@ $(window).on('scroll', efectosScroll);
 
 $(document).ready(function(){
 
-	$('.barras').on('click', muestraMenu);
+
 	$('.desplazar').on('click', navegar);
 
 
 });
 
 
-function muestraMenu(){
-	$('.menu').toggleClass('abierto');
-	}
 
 function efectosScroll(){
 
 	let scrollActual = $(window).scrollTop();
 	let altoPantalla = $(window).innerHeight() / 2; 
-	let profundidadBoton  = $('#tratamientos .boton').offset().top;
+	let profundidadBoton  = $('#servicios .boton').offset().top;
 	let scrollObjetivo = profundidadBoton - altoPantalla;
 
 	if(scrollActual >= scrollObjetivo) {
 
-	$('#tratamientos .boton').addClass('visible');
+	$('#servicios .boton').addClass('visible');
 
 	}
 }
-
 
 
 
@@ -46,4 +42,4 @@ function navegar(){
 	$('.menu').removeClass('abierto');
 }
 
-
+$('.collapse').collapse()

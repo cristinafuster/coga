@@ -19,7 +19,7 @@ aside{
 
 }
 
-p, h5 {
+p, h5, li {
     font-family: 'Raleway', sans-serif;
     line-height: 2em;
     font-size: 1em;
@@ -94,16 +94,6 @@ HEADER
 ------------------------------------------------------*/
 
 
-.barras {
-        display: none;
-        cursor: pointer;
-        position: fixed;
-        top: 0px;
-        right: 20px;
-        font-size: 3em;
-        text-shadow: 0 0 7px #eee, 0 0 7px #eee, 0 0 7px #eee;
-  }
-
  nav{
   	width: 100%;
   	height: 100px;
@@ -145,6 +135,9 @@ nav a {
     text-transform: uppercase;
     text-decoration:none;
 }
+
+
+
 
 /*------------------------------------------------------
 INICIO
@@ -194,17 +187,24 @@ SERVICIOS
   text-align:center;
  }
 
- .boton {
+ .botonComun, #myCollapsible .card-header, #myCollapsibleBis .card-header{
+
+  background-color: rgba(48, 71, 214,.2); /*azul claro*/
+  color: #342a5f;
+  border: 1px solid rgba(0,46,67,0.5);
+
+ }
+
+
+ .botonPrincipal{
     
   display: inline-block;
   padding: 10px 30px 10px 30px;
   transition: all 1s cubic-bezier(.33,.62,.38,.97);
   text-align:center;
   margin: 10px;
-  overflow:hidden;   
-  background-color: rgba(48, 71, 214,.2); /*azul claro*/
-  color: #342a5f;
-  border: 1px solid rgba(0,46,67,0.5);
+   
+  
 }
 
 #servicios h4, #centro h4{
@@ -214,52 +214,55 @@ SERVICIOS
   
 }
 
-.boton .blanco{
+.botonPrincipal .blanco, .botonPrincipal .amarillo {
   background: #fff;
-  border: 1px solid rgba(0,46,67,0.5);
+  border: 1px solid rgba(0,46,67,0.5); 
 
 }
 
-
-
-.boton:hover {
-  background-color: rgba(245, 207, 5, .9);
+.botonPrincipal:hover, #myCollapsible .card-header:hover {
+  background-color: rgba(245, 207, 5, .7); /*cambia a amarillo*/
   border: 1px solid rgba(0,46,67,.9);
   text-decoration: none;
   
-  
 }
 
-.boton.blanco:hover { 
+.botonPrincipal.blanco:hover, #myCollapsibleBis .card-header:hover { 
   text-decoration: none;
-  background: rgba(52, 42, 95, .9);
+  background: rgba(52, 42, 95, .9);/*cambia de blanco a azuloscuro*/
   color: #fff;
+
   
+}
+
+.botonPrincipal.amarillo:hover { 
+  text-decoration: none;
+  background: rgba(245, 207, 5, .9);/*cambia de blanco a amarillo*/
+  color: #342a5f;
   
-  
 }
 
-/*------------------------------------------------------
-OPTOMETRIA
-------------------------------------------------------*/  
+.accordion h3, .accordion h4{
 
-#optometria h2{
+  color: #342a5f;
 
-  font-size: 2em;
-  line-height: 2em;
 }
 
-#optometria h5{
-  text-align:center;
-}
-#optometria h4{
+ #myCollapsibleBis .card-header:hover h4 {
 
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-size: 1em;
-  text-align:center;
+color:#fff;
 }
 
+.titulo{
+
+  text-decoration: dotted;
+
+}
+
+.accordion button{
+
+  padding-right: 100%;
+}
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
