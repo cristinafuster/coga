@@ -187,24 +187,22 @@ SERVICIOS
   text-align:center;
  }
 
- .botonComun, #myCollapsible .card-header, #myCollapsibleBis .card-header{
+ .botonComun,.card-header{
 
   background-color: rgba(48, 71, 214,.2); /*azul claro*/
   color: #342a5f;
   border: 1px solid rgba(0,46,67,0.5);
-
  }
 
 
- .botonPrincipal{
+ .botonPrincipal {
     
   display: inline-block;
   padding: 10px 30px 10px 30px;
   transition: all 1s cubic-bezier(.33,.62,.38,.97);
   text-align:center;
   margin: 10px;
-   
-  
+
 }
 
 #servicios h4, #centro h4{
@@ -214,31 +212,37 @@ SERVICIOS
   
 }
 
-.botonPrincipal .blanco, .botonPrincipal .amarillo {
+.botonPrincipal.amarillo {
   background: #fff;
   border: 1px solid rgba(0,46,67,0.5); 
+  color: #342a5f;
 
 }
 
-.botonPrincipal:hover, #myCollapsible .card-header:hover {
+.botonPrincipal.blanco{
+  background: rgba(52, 42, 95, .9);/*azuloscuro*/
+  color: #fff;
+  transition: none;
+}
+
+.botonPrincipal:hover, .card-header:hover{
   background-color: rgba(245, 207, 5, .7); /*cambia a amarillo*/
   border: 1px solid rgba(0,46,67,.9);
   text-decoration: none;
   
 }
 
-.botonPrincipal.blanco:hover, #myCollapsibleBis .card-header:hover { 
+.botonPrincipal.blanco:hover{ 
   text-decoration: none;
-  background: rgba(52, 42, 95, .9);/*cambia de blanco a azuloscuro*/
-  color: #fff;
+  background: #fff;/*cambia de  azuloscuro a blanco*/
+  color: #342a5f;
 
-  
 }
 
 .botonPrincipal.amarillo:hover { 
   text-decoration: none;
   background: rgba(245, 207, 5, .9);/*cambia de blanco a amarillo*/
-  color: #342a5f;
+  
   
 }
 
@@ -248,10 +252,6 @@ SERVICIOS
 
 }
 
- #myCollapsibleBis .card-header:hover h4 {
-
-color:#fff;
-}
 
 .titulo{
 
@@ -280,10 +280,11 @@ CENTRO
 PROFESIONALES
 ------------------------------------------------------*/
 
-#profesionales{
+#profesionales, #cursos .aviso{
 
   text-align:center;
 }
+
 
 /*------------------------------------------------------
 CONTACTO
