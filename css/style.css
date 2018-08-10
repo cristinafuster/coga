@@ -79,7 +79,10 @@ h2, h3{
     
 }
 
+ #avisoLegal h3{
 
+  text-align: left;
+}
 /*------------------------------------------------------
 HEADER
 ------------------------------------------------------*/
@@ -167,6 +170,12 @@ background-color: rgba(255, 255, 255, .6);
 margin-bottom: 20px;
 padding: 20px 10px;
 
+}
+
+.hero img{
+
+  height: 30px;
+  display: none;
 }
 
 
@@ -372,7 +381,7 @@ MEDIA QUERIES
 
   h4{
 
-    font-size: .9em;
+    font-size: .8em;
   }
 
   p, h5, #optometria li{
@@ -400,18 +409,18 @@ MEDIA QUERIES
     margin: 10px 0;
     display: block;
     text-align: center;
-    border-bottom: 2px dashed #342a5f;
+    border-bottom: 1px dashed rgba(52, 42, 95, .6);
     line-height:20px;
   }
 
   nav img{
     display: block;
     margin: 10px auto 0;
-  }
-
-  nav li:last-of-type a{
+    height: 30px;
     border:none;
   }
+
+
 
   nav.abierto {
     transform: translateY(0);
@@ -432,18 +441,19 @@ MEDIA QUERIES
     width: 190px;
   }
 
- #inicio img {
-     height: 30px;
-
-}
-
 
 #inicio .hero{
 
 margin-left: 50px;
+padding: 10px;
 }
 
 
+.hero img{
+
+  display:inline;
+  margin-left: 9px;
+}
 
   #inicio h1 span{
     font-size: 1em;
@@ -474,6 +484,11 @@ margin-left: 50px;
     padding: 0px;
   }
 
+.accordion button{
+
+  padding:0px;
+}
+
 
   iframe{
 
@@ -482,17 +497,6 @@ margin-left: 50px;
     width: 70%;
     height:70%;
     
-  }
-
-
-
-
-  #avisolegal.padding-section {
-    padding: 20px;  
-  }
-
-  #avisolegal h1 {
-    font-size: 20px;  
   }
 
 
