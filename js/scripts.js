@@ -1,37 +1,10 @@
 
-$(window).on('scroll', efectosScroll);
-
-
-
 $(document).ready(function(){
 
-	$('.barras').on('click', muestraMenu);
 	$('.desplazar').on('click', navegar);
 
 
 });
-
-
-function muestraMenu(){
-	$('.menu').toggleClass('abierto');
-	}
-
-
-
-function efectosScroll(){
-
-	let scrollActual = $(window).scrollTop();
-	let altoPantalla = $(window).innerHeight() / 2; 
-	let profundidadBoton  = $('#servicios').offset().top;
-	let scrollObjetivo = profundidadBoton - altoPantalla;
-
-	if(scrollActual >= scrollObjetivo) {
-
-	$('#servicios').addClass('visible');
-
-	}
-}
-
 
 
 function navegar(){
@@ -44,7 +17,39 @@ function navegar(){
 		scrollTop: profundidad
 	}, 1000);
 
-	$('.menu').removeClass('abierto');
+	$('#navbarToggler').removeClass('show');
 }
 
-$('.collapse').collapse()
+
+$(window).on('scroll', mostrarNav);
+function mostrarNav(){
+
+	var scrollRealizado = $(window).scrollTop();
+				
+				if (scrollRealizado > 250) {
+
+					$('nav img').addClass('visible')
+					};
+				
+				} 
+
+
+
+$(window).on('scroll', reveal);
+
+			let scrollActual, profundidad;
+
+			function reveal(){
+
+				scrollActual = $(window).scrollTop();
+				profundidad = $('#servicios .ojos').offset().top - $(window).innerHeight() / 2;
+
+
+				if (scrollActual >= profundidad) {
+
+					$('#servicios .ojos').addClass('visible');
+				}
+			}
+		
+
+
