@@ -21,7 +21,7 @@ function navegar(){
 }
 
 
-$(window).on('scroll', mostrarNav);
+/*$(window).on('scroll', mostrarNav);
 function mostrarNav(){
 
 	var scrollRealizado = $(window).scrollTop();
@@ -31,7 +31,7 @@ function mostrarNav(){
 					$('nav img').addClass('visible')
 					};
 				
-				} 
+				} */
 
 
 

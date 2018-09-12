@@ -78,10 +78,10 @@ h2, h3{
     
 }
 
-.smallPadding-section {
+/*.smallPadding-section {
     padding: 15px 6px;
     
-}
+}*/
 
  #avisoLegal h3{
 
@@ -96,7 +96,7 @@ HEADER
 
  nav.navbar{
   	width: 100%;
-  	height: 100px;
+  	height: 60px;
     top: 0;
     left:0;
     transition: all .5s;
@@ -104,32 +104,34 @@ HEADER
     z-index:2;
     letter-spacing: 2px;
     padding: 0 10px;
-    background: white;
-
+    background: rgba(52, 42, 95, .97);
+    border-bottom:1px solid white;
 
       }
 
   #navbarToggler{
 
     justify-content:flex-end;
-    padding-left: .3em;
+    background:rgba(52, 42, 95, .97)
+    color:white;
 
   }
 
-  #navbar-toggler, nav a, .navbar-brand{
+  #navbarToggler, nav a, .navbar-brand{
     outline:none;
   }
 
+  #navbarToggler a{
 
+    color:white;
+  }
  nav img{
-	  height: 90px;
+	  height: 60px;
     margin-left: 10px;
     margin-top: 0px;
-    
-    opacity: 0;
 }
 
-.visible{
+/*.visible{
 
   animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   opacity:1;
@@ -143,24 +145,16 @@ HEADER
   100% {
     transform: translateY(0px);
   }
-}
-
-
- nav ul {
-  	float: right;
-  	margin-right: 20px;
-}
+}*/
 
 
  nav li {
-  	display: inline-block;	
     list-style: none;
-
+    
 }
 
 
-nav.navbar a {
-	  color:#342A5F;
+.navbar a {
     padding: 10px 10px;
     display: block;
     font-size: 0.9em;
@@ -171,14 +165,13 @@ nav.navbar a {
 
 
 
-
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
 
 #inicio{
 
-  background: #342a5f;
+  background: rgba(52, 42, 95, .97)
 }
 
 .paddingExtra{
@@ -220,88 +213,43 @@ fill: white;
 
 .ojoIzq{
 
-  animation: bounce-in-left 1.1s both;
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
-@keyframes bounce-in-left {
+@keyframes slide-in-left {
   0% {
-    transform: translateX(-600px);
-    animation-timing-function: ease-in;
+    transform: translateX(-1000px);
     opacity: 0;
-  }
-  38% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: translateX(-68px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateX(-28px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateX(-8px);
-    animation-timing-function: ease-in;
   }
   100% {
     transform: translateX(0);
-    animation-timing-function: ease-out;
+    opacity: 1;
   }
 }
+
 
 
 .ojoDcho{
+  
 
-  animation: bounce-in-right 1.1s both;
+  animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
-@keyframes bounce-in-right {
+
+@keyframes slide-in-right {
   0% {
-    transform: translateX(600px);
-    animation-timing-function: ease-in;
+    transform: translateX(1000px);
     opacity: 0;
-  }
-  38% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: translateX(68px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateX(32px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateX(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateX(8px);
-    animation-timing-function: ease-in;
   }
   100% {
     transform: translateX(0);
-    animation-timing-function: ease-out;
+    opacity: 1;
   }
 }
+
+
 
 
 
@@ -327,6 +275,9 @@ fill: white;
 
   color: white;
   animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  padding-top: 40px;
+  font-size: 1.2;
+  letter-spacing: .1em;
 
 }
 
@@ -526,7 +477,12 @@ CONTACTO
 FOOTER
 ------------------------------------------------------*/
 footer a {
-  color: #342a5f;
+  color: white;
+}
+
+footer{
+
+ background:rgba(52, 42, 95, .97); 
 }
 
 footer img{
@@ -540,10 +496,7 @@ footer img{
 footer small p{
 
   line-height: .5em;
-}
-
-footer{
-  background: rgba(255,255,255);
+  color:white;
 }
 
 
@@ -576,10 +529,31 @@ MEDIA QUERIES
 
   }
 
+ nav.navbar{
+
+    background: white;
+
+      }
+
+    #navbarToggler{
+
+    background:white
+
+  }
+
+  #navbarToggler a{
+
+    color: #342a5f;
+  }
+
+  #navbarToggler a:hover{
+
+    color:white;
+  }
 
   nav img{
 
-    opacity:0;
+    display: none
 
   }
 
@@ -587,16 +561,30 @@ MEDIA QUERIES
     float: none;
     margin: 0;
     padding: 0;
+
   }
 
   nav li {
-    display: block;
-    list-style: none;
     text-align: center;
-    width: 190px;
+    width: 100%;
+    border-bottom: 1px solid #342a5f;
   }
 
+nav li:hover{
 
+  background:#342a5f;
+  border-bottom:1px solid white;
+}
+
+#inicio{
+
+  padding-top: 60px;
+}
+
+.hero{
+
+  font-size:0.7em;
+}
 
   #inicio h3{
     font-size: .8em;
