@@ -131,22 +131,6 @@ HEADER
     margin-top: 0px;
 }
 
-/*.visible{
-
-  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  opacity:1;
-}
-
-
-@keyframes slide-top {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}*/
-
 
  nav li {
     list-style: none;
@@ -309,42 +293,6 @@ SERVICIOS
   text-align:center;
  }
 
-#servicios .ojos{
-
-  width: 25%;
-  height: 25%;
-  fill: #342a5f;
-  opacity: 0;
-  
-}
-
-
-@keyframes puff-in-center {
-  0% {
-    transform: scale(2);
-    filter: blur(2px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-
-
-
-#servicios .ojos.visible{
-
-  opacity: 1;
-  animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-
- #servicios article{
-
-  size: 50%;
- }
 
  .botonComun,.card-header{
 
@@ -421,6 +369,47 @@ SERVICIOS
 
   padding-right: 100%;
 }
+
+
+/*.img-opacity img {
+  position:absolute;
+  transition:all .6s ease-in-out;
+
+}
+
+.img-opacity .img-1 {
+  opacity:1
+}
+
+.img-opacity .img-2 {
+  opacity:0
+}
+
+.img-opacity:hover .img-1 {
+  opacity:0
+}
+.img-opacity:hover .img-2 {
+  opacity:1
+}
+
+
+.img-opacity:hover img{
+transition:all 1.2s ease-in-out;
+
+}*/
+
+
+#servicios [class^="flaticon-"]::before {
+  font-size: 3em !important;
+  text-align: center;
+  padding:20px;
+  display: block;
+  
+
+}
+
+
+
 /*------------------------------------------------------
 CENTRO
 ------------------------------------------------------*/
@@ -440,6 +429,15 @@ PROFESIONALES
   text-align:center;
 }
 
+
+#profesionales [class^="flaticon-"]::before {
+  font-size: 3em !important;
+  text-align: center;
+  padding:25px;
+  display: block;
+
+
+}
 
 /*------------------------------------------------------
 CONTACTO
@@ -529,12 +527,6 @@ MEDIA QUERIES
 
   }
 
- nav.navbar{
-
-    background: white;
-
-      }
-
     #navbarToggler{
 
     background:white
@@ -553,8 +545,16 @@ MEDIA QUERIES
 
   nav img{
 
-    display: none
+    height: 45px;
 
+  margin-left: 0;
+
+  }
+
+  .navbar-light .navbar-toggler{
+
+    border: 1px solid grey;
+    background: white;
   }
 
   nav ul {

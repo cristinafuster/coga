@@ -31,7 +31,7 @@ function mostrarNav(){
 					$('nav img').addClass('visible')
 					};
 				
-				} */
+				} 
 
 
 
@@ -49,7 +49,7 @@ $(window).on('scroll', reveal);
 
 					$('#servicios .ojos').addClass('visible');
 				}
-			}
+			}*/
 		
 
 
