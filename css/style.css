@@ -102,18 +102,19 @@ HEADER
     transition: all .5s;
     position: fixed;
     z-index:2;
-    letter-spacing: 2px;
-    padding: 0 10px;
-    background: rgba(52, 42, 95, .97);
-    border-bottom:1px solid white;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    background: #fff;
+    border-bottom:1px solid #342a5f;
 
       }
+
 
   #navbarToggler{
 
     justify-content:flex-end;
-    background:rgba(52, 42, 95, .97)
-    color:white;
+    background:#fff;
+    color:#342a5f;
 
   }
 
@@ -123,7 +124,7 @@ HEADER
 
   #navbarToggler a{
 
-    color:white;
+    color:#342a5f;
   }
  nav img{
 	  height: 60px;
@@ -137,6 +138,10 @@ HEADER
     
 }
 
+.nav-item{
+
+  padding-right: 10px;
+}
 
 .navbar a {
     padding: 10px 10px;
@@ -147,16 +152,16 @@ HEADER
     font-weight: 900
 }
 
+ .arrow{
+  height: 60px;
+  display:block;
+  margin:auto;
 
+}
 
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
-
-#inicio{
-
-  background: rgba(52, 42, 95, .97)
-}
 
 .paddingExtra{
 
@@ -164,36 +169,38 @@ INICIO
 
 }
 
+/*cambio de color del relleno del ojo*/
+
 .rellenoOjoIzq, .rellenoOjoDcho{
   animation: color-change-4x 4s linear infinite alternate-reverse backwards;
 }
 
 
+
 @keyframes color-change-4x {
   0% {
-    fill: #19dcea;
+    fill: #f5cf05;
     filter: blur(12px);
   }
   33.3333% {
-    fill: #b22cff;
+    fill: #fbe66f;
   }
   66.666% {
-    fill: #ea2222;
+    fill: #fadc38;
   }
   100% {
-    fill: #f5be10;
+    fill: #FEF7D1;
   }
 }
-
-
-
-
 
 .ojoIzq,.ojoDcho, .letras, .letras2{
 
-fill: white;
+fill: #342a5f; 
 
 }
+
+
+/*ojo izquierdo entra desde la izquierda*/
 
 .ojoIzq{
 
@@ -213,11 +220,10 @@ fill: white;
 }
 
 
-
+/*ojo derecho entra desde la derecha*/
 .ojoDcho{
   
-
-  animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
@@ -233,9 +239,7 @@ fill: white;
   }
 }
 
-
-
-
+/*animacion letras*/
 
 .letras, .letras2{
   
@@ -255,33 +259,45 @@ fill: white;
   }
 }
 
-.hero{
 
-  color: white;
-  animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  padding-top: 40px;
-  font-size: 1.2;
-  letter-spacing: .1em;
+
+#inicio svg{
+
+  height: 75%;
+  width:100%;
 
 }
 
 
-@keyframes text-pop-up-top {
+/*animacion arrow*/
+
+
+.arrow {
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+
+@keyframes pulsate-fwd {
   0% {
-    transform: translateY(0);
-    transform-origin: 50% 50%;
-    text-shadow: none;
-    letter-spacing: -0.5em;
-    filter: blur(12px);
-    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
   }
   100% {
-    transform: translateY(-60px);
-    transform-origin: 50% 50%;
-    filter: blur(0px);
-    opacity: 1;
-    
+    transform: scale(1);
   }
+}
+
+
+/*------------------------------------------------------
+CENTRO
+------------------------------------------------------*/
+
+#centro{
+
+  color: #fff;
+ background: #342a5f
 }
 
 
@@ -291,6 +307,15 @@ SERVICIOS
 
  #servicios h2{
   text-align:center;
+ }
+
+ #visionDeportiva, #terapiaVisual, #contactologia, #optometriaComportamental{
+
+  background:#342a5f;
+ }
+#visionDeportiva h2, #terapiaVisual h2, #contactologia h2, #optometriaComportamental h2, #contactologia h3, #optometriaComportamental h3, #terapiaVisual h3{
+
+  color: #fff;
  }
 
 
@@ -371,53 +396,15 @@ SERVICIOS
 }
 
 
-/*.img-opacity img {
-  position:absolute;
-  transition:all .6s ease-in-out;
-
-}
-
-.img-opacity .img-1 {
-  opacity:1
-}
-
-.img-opacity .img-2 {
-  opacity:0
-}
-
-.img-opacity:hover .img-1 {
-  opacity:0
-}
-.img-opacity:hover .img-2 {
-  opacity:1
-}
-
-
-.img-opacity:hover img{
-transition:all 1.2s ease-in-out;
-
-}*/
-
-
 #servicios [class^="flaticon-"]::before {
   font-size: 3em !important;
   text-align: center;
   padding:20px;
   display: block;
+  margin:auto;
   
 
 }
-
-
-
-/*------------------------------------------------------
-CENTRO
-------------------------------------------------------*/
-
-#centro h2{
- text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
-}
-
 
 
 /*------------------------------------------------------
@@ -435,6 +422,7 @@ PROFESIONALES
   text-align: center;
   padding:25px;
   display: block;
+  margin:auto;
 
 
 }
@@ -474,14 +462,6 @@ CONTACTO
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
-footer a {
-  color: white;
-}
-
-footer{
-
- background:rgba(52, 42, 95, .97); 
-}
 
 footer img{
 
@@ -494,7 +474,6 @@ footer img{
 footer small p{
 
   line-height: .5em;
-  color:white;
 }
 
 
@@ -570,21 +549,22 @@ MEDIA QUERIES
     border-bottom: 1px solid #342a5f;
   }
 
-nav li:hover{
+  nav li:hover{
 
-  background:#342a5f;
-  border-bottom:1px solid white;
-}
+    background:#342a5f;
+    border-bottom:1px solid white;
+  }
 
-#inicio{
+  #inicio{
 
-  padding-top: 60px;
-}
+    padding-top: 60px;
+  }
 
-.hero{
 
-  font-size:0.7em;
-}
+  .hero{
+
+    font-size:0.7em;
+  }
 
   #inicio h3{
     font-size: .8em;
@@ -604,10 +584,10 @@ nav li:hover{
     padding: 0px;
   }
 
-.accordion button{
+  .accordion button{
 
-  padding:0px;
-}
+    padding:0px;
+  }
 
 
   iframe{
