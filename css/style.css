@@ -112,7 +112,7 @@ HEADER
 
   #navbarToggler{
 
-    justify-content:flex-end;
+    /*justify-content:flex-end;*/
     background:#fff;
     color:#342a5f;
 
@@ -480,6 +480,17 @@ footer small p{
 /*------------------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------------*/
+@media screen and (max-width: 1200px){
+
+  #navbarToggler a{
+
+
+    font-size: .6em;
+  }
+}
+
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -515,6 +526,8 @@ MEDIA QUERIES
   #navbarToggler a{
 
     color: #342a5f;
+    font-size: 6em;
+
   }
 
   #navbarToggler a:hover{
